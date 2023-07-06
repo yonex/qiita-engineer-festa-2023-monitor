@@ -23,7 +23,6 @@ async function fetchItemsResponse(page: number, perPage: number, date: QiitaFest
   const response = await fetch(
     `https://qiita.com/api/v2/items?${query}`,
     {
-      next: { revalidate: 300 },
       headers: {
         'Authorization': `Bearer ${accessToken}`,
       },
