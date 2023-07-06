@@ -198,6 +198,6 @@ export async function getStaticProps() {
     props: {
       results,
     },
-    revalidate: 600, // In seconds
+    revalidate: 3600, // In seconds
   };
 }
